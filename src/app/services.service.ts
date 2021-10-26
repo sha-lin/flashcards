@@ -7,6 +7,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class ServicesService {
+  readonly APIUrl = "http://127.0.0.1:8000/subject/";
 
   constructor() { }
 }

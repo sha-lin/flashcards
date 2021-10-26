@@ -10,13 +10,15 @@ import { ServicesService } from './services.service';
 
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SubjectsComponent,
     AddUpdateComponent,
-    ShowComponent
+    ShowComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
