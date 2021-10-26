@@ -9,5 +9,20 @@ import {Observable} from 'rxjs';
 export class ServicesService {
   readonly APIUrl = "http://127.0.0.1:8000/subject/";
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
+
+  getSubjectList():Observable<any[]>{
+    return this.http.get<any[]>(this.APIUrl +'/subject');
+  }
+  addSubject(val:any){
+    return this.http.post(this.APIUrl + '/subject/',val);
+  }
+
+  updateSubject(val:any){
+    return this.http.put(this.APIUrl + '/subject/',val);
+  }
+
+  deleteSubject(val:any){
+    return this.http.delete(this.APIUrl + '/subject/'+val);
+  }
 }
