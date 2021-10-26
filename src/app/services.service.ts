@@ -25,4 +25,7 @@ export class ServicesService {
   deleteSubject(val:any){
     return this.http.delete(this.APIUrl + '/subject/'+val);
   }
+  getAllSubjectNames():Observable<any[]>{
+    return this.http.get<any[]>(this.APIUrl+'/department/');
+  }
 }
