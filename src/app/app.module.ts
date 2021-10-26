@@ -8,6 +8,9 @@ import { AddUpdateComponent } from './subjects/add-update/add-update.component';
 import { ShowComponent } from './subjects/show/show.component';
 import { ServicesService } from './services.service';
 
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,9 +20,12 @@ import { ServicesService } from './services.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
