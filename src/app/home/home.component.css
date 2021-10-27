@@ -29,4 +29,8 @@
         font-size: 40px;
     }   
 }
+.card{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
