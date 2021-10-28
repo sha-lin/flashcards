@@ -11,6 +11,7 @@ import { ServicesService } from './services.service';
 
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
     AppComponent,
     SubjectsComponent,
     HomeComponent,
+    RegisterComponent,
     // AddUpdateComponent,
     // ShowComponent,
   ],

@@ -7,8 +7,8 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class ServicesService {
-  readonly APIUrl = "http://127.0.0.1:8000/subject/";
-  // readonly APIUrl = "https://swaggerflashcard-7.herokuapp.com/";
+  readonly APIUrl = "http://127.0.0.1:8000/Api";
+  // base_url:string = "https://swaggerflashcard-7.herokuapp.com/";
 
 
   constructor(private http:HttpClient) { }
