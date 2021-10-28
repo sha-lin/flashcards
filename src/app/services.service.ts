@@ -10,7 +10,7 @@ export class ServicesService {
   readonly APIUrl = "http://127.0.0.1:8000/Api";
   // base_url:string = "https://swaggerflashcard-7.herokuapp.com/";
   url ="https://swaggerflashcard-7.herokuapp.com/"
-  token =""
+  token ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzM3MTc2LCJpYXQiOjE2MzUzMzY4NzYsImp0aSI6ImM5ZjBiMDgwZmUyMDQ4NjM4YmZmMmFlMmE4YzRmZDljIiwidXNlcl9pZCI6M30.SsLTmdaAnM7Kku7Q-LnQOkG6zhdIIOhkiTrfmfghFKk"
   constructor(private http:HttpClient) { }
 
   getSubjectList():Observable<any[]>{
