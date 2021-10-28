@@ -12,6 +12,7 @@ import { ServicesService } from './services.service';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { RegisterComponent } from './register/register.component';
     SubjectsComponent,
     HomeComponent,
     RegisterComponent,
+    LoginComponent,
     // AddUpdateComponent,
     // ShowComponent,
   ],
