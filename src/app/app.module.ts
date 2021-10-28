@@ -13,13 +13,13 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-// import { SubjectsComponent } from './subjects/subjects.component';
+import { SubjectsComponent } from './subjects/subjects.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    // SubjectsComponent,
+    SubjectsComponent,
     HomeComponent,
     RegisterComponent,
     LoginComponent,
