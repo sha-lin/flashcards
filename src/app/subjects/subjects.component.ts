@@ -8,7 +8,7 @@ import { ServicesService} from 'src/app/services.service';
   templateUrl: './subject.component.html',
   styleUrls: ['./subject.component.css']
 })
-export class SubjectComponent implements OnInit {
+export class SubjectsComponent implements OnInit {
 
   constructor(private service:ServicesService) { }
 
