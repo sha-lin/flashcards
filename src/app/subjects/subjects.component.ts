@@ -10,9 +10,13 @@ import { ServicesService} from 'src/app/services.service';
 })
 export class SubjectsComponent implements OnInit {
 
+
   constructor(private service:ServicesService) { }
 
   SubjectList:any=[];
+  NoteList:any=[];
+  
+  
 
   ModalTitle:any;
   ActivateAddEditSubjectComp:any='false';
@@ -60,6 +64,12 @@ export class SubjectsComponent implements OnInit {
   refreshSubjectList(){
     this.service.getSubjectList().subscribe(data=>{
       this.SubjectList=data;
+    });
+  }
+
+  getNoteList(){
+    this.service.getNoteList().subscribe(data=>{
+      this.NoteList=data;
     });
   }
 }

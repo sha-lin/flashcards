@@ -8,10 +8,15 @@ import {Observable} from 'rxjs';
 })
 export class ServicesService {
   readonly APIUrl = "http://127.0.0.1:8000/Api";
+  readonly sub_Url = "https://flash-cards-rest-api.herokuapp.com/api/";
   // base_url:string = "https://swaggerflashcard-7.herokuapp.com/";
   url ="https://swaggerflashcard-7.herokuapp.com/"
   token ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzM3MTc2LCJpYXQiOjE2MzUzMzY4NzYsImp0aSI6ImM5ZjBiMDgwZmUyMDQ4NjM4YmZmMmFlMmE4YzRmZDljIiwidXNlcl9pZCI6M30.SsLTmdaAnM7Kku7Q-LnQOkG6zhdIIOhkiTrfmfghFKk"
   constructor(private http:HttpClient) { }
+
+  getNoteList():Observable<any[]>{
+    return this.http.get<any[]>(this.sub_Url + '/subjects');
+  }
 
   getSubjectList():Observable<any[]>{
     return this.http.get<any[]>(this.APIUrl +'/subject');
